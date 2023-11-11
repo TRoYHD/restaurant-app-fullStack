@@ -1,9 +1,20 @@
-import React from 'react'
-
+import React from "react";
+import Menu from "./Menu";
+import Link from "next/link";
 const Navbar = () => {
   return (
-    <div>Navbar</div>
-  )
-}
+    <div>
+      {/* LOGO */}
+      <div>
+        <Link >SherLock Pizza</Link>
+      </div>
 
-export default Navbar
+      {/* MOBILE MENU */}
+      <div>
+        <Menu />
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
